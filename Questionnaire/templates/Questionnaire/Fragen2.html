@@ -1,0 +1,82 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+Fragebogen (2/11)
+{% endblock %}
+
+{% block content %}
+
+<p>
+    {{Constants.forms.FRAGEN2.task}}
+</p>
+
+<div style="margin: 30px">
+    <p>
+        {{form.F201.label}}
+    </p>
+    <table style="margin-top: -10px">
+        <tr class="figure-caption">
+            <td style="padding-right: 10px">
+                {{Constants.forms.FRAGEN2.label.1}}
+            </td>
+            {{for i in form.F201}}
+            <td style="padding-right: 10px">
+                {{i}}
+            </td>
+            {{endfor}}
+            <td style="padding-right: 10px">
+                {{Constants.forms.FRAGEN2.label.2}}
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div style="margin: 30px">
+    <p>
+        {{form.F202.label}}
+    </p>
+    <table style="margin-top: -10px">
+        <tr class="figure-caption">
+            <td style="padding-right: 10px">
+                {{Constants.forms.FRAGEN2.label.1}}
+            </td>
+            {{for i in form.F202}}
+            <td style="padding-right: 10px">
+                {{i}}
+            </td>
+            {{endfor}}
+            <td style="padding-right: 10px">
+                {{Constants.forms.FRAGEN2.label.2}}
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div style="margin: 30px">
+    <p>
+        {{form.F203.label}}
+    </p>
+    <table style="margin-top: -10px">
+        <tr class="figure-caption">
+            <td style="padding-right: 10px">
+                {{Constants.forms.FRAGEN2.label.1}}
+            </td>
+            {{for i in form.F203}}
+            <td style="padding-right: 10px">
+                {{i}}
+            </td>
+            {{endfor}}
+            <td style="padding-right: 10px">
+                {{Constants.forms.FRAGEN2.label.2}}
+            </td>
+        </tr>
+    </table>
+</div>
+
+<p>
+    Bitte klicken Sie nun auf <em>Weiter</em>, um fortzufahren.
+</p>
+
+{% next_button %}
+{% endblock %}

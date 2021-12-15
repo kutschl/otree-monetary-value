@@ -1,0 +1,126 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+Fragebogen (11/11)
+{% endblock %}
+
+{% block content %}
+
+<p>
+    {{Constants.forms.FRAGEN11.task}}
+</p>
+
+<div style="margin: 30px;">
+    <p>
+        {{form.F1101.label}}
+    </p>
+    <div style="margin-top: -10px">
+        <p>
+            <input style="font-size:.875em;" class="form-control" name="F1101" id="F1101" type="number" step="any"/>
+            {{formfield_errors 'F1101'}}
+        </p>
+    </div>
+    <p>
+        {{form.F1102.label}}
+    </p>
+    <div class="figure-caption" style="margin-top: -10px">
+        <p>
+            {{form.F1102}}
+        </p>
+    </div>
+    <p>
+        {{form.F1103.label}}
+    </p>
+    <div class="figure-caption" style="margin-top: -10px">
+        <p>
+            {{form.F1103}}
+        </p>
+    </div>
+    <p>
+        {{form.F1104.label}}
+    </p>
+    <div style="margin-top: -10px">
+        <p>
+            <input style="font-size:.875em;" class="form-control" name="F1104" id="F1104" type="number"/>
+            {{formfield_errors 'F1104'}}
+        </p>
+    </div>
+    <p>
+        {{form.F1105.label}}
+    </p>
+    <div style="margin-top: -10px">
+        <p>
+            <input style="font-size:.875em;" class="form-control" name="F1105" id="F1105" type="number"/>
+            {{formfield_errors 'F1105'}}
+        </p>
+    </div>
+    <p>
+        {{form.F1106.label}}
+    </p>
+    <div style="margin-top: -10px">
+        <p>
+            <input style="font-size:.875em;" class="form-control" name="F1106" id="F1106" type="number" min="1.0" max="4.0" step="any"/>
+            {{formfield_errors 'F1106'}}
+        </p>
+    </div>
+    <p>
+        {{form.F1107.label}}
+    </p>
+    <div style="margin-top: -10px">
+        <p>
+            <input style="font-size:.875em;" class="form-control" name="F1107" id="F1107" type="number" min="1.0" max="4.0" step="any"/>
+            {{formfield_errors 'F1107'}}
+        </p>
+    </div>
+    <p>
+        {{form.F1108.label}}
+    </p>
+    <div class="figure-caption" style="margin-top: -10px">
+        <p>
+            {{form.F1108}}
+        </p>
+    </div>
+    <p>
+        {{form.F1109.label}}
+    </p>
+    <div class="figure-caption" style="margin-top: -10px">
+        <p>
+            {{form.F1109}}
+        </p>
+    </div>
+    <p>
+        {{form.F1110.label}}
+    </p>
+    <div style="margin-top: -10px">
+        <p>
+            <input style="font-size:.875em;" class="form-control" name="F1110" id="F1110" type="text"/>
+            {{formfield_errors 'F1110'}}
+        </p>
+    </div>
+    <p>
+        {{form.F1111.label}}
+    </p>
+    <table style="margin-top: -10px">
+        <tr class="figure-caption">
+            <td style="padding-right: 10px">
+                {{Constants.forms.FRAGEN11Q11.label.1}}
+            </td>
+            {{for j in form.F1111}}
+            <td style="padding-right: 10px">
+                {{j}}
+            </td>
+            {{endfor}}
+            <td style="padding-right: 10px">
+                {{Constants.forms.FRAGEN11Q11.label.2}}
+            </td>
+        </tr>
+    </table>
+</div>
+
+<p>
+    Bitte klicken Sie nun auf <em>Weiter</em>, um fortzufahren.
+</p>
+
+{% next_button %}
+{% endblock %}

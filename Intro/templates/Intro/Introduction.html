@@ -1,0 +1,52 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+Willkommen
+{% endblock %}
+
+{% block content %}
+
+<p style="text-align: justify">
+    Herzlich Willkommen und vielen Dank für Ihre Teilnahme an dem heutigen Experiment!
+</p>
+
+<p style="text-align: justify">
+    Auf den folgenden Seiten erhalten Sie Informationen zum Ablauf des Experiments und müssen eine Bankverbindung
+    für Ihre Auszahlung angeben.
+    Um an dem Experiment weiter teilnehmen zu können, müssen Sie die E-Mail, mit der Sie sich für das Experiment angemeldet
+    haben, angeben.
+    Beachten Sie auch, dass Sie an der Studie nur einmal teilnehmen dürfen.
+</p>
+
+<p style="text-align: justify">
+    Wenn Sie während der Studie Fragen haben sollten,
+    können Sie den Studienleiter jederzeit auf den folgenden Wegen erreichen:
+</p>
+<ul>
+    <li style="margin-bottom: 10px">
+        per Telefon unter {{ Constants.contact.phone }}
+    </li>
+    <li>
+        per Email unter <a href="mailto:{{ Constants.contact.email }}">{{ Constants.contact.email }}</a>
+    </li>
+</ul>
+
+<p>
+    Alle Kontaktdetails können Sie auch in der Email finden, mit der Sie den Link zu diesem Experiment erhalten haben.
+</p>
+
+<p>
+    Bitte klicken Sie nun auf <em>Weiter</em>, um fortzufahren.
+</p>
+
+<noscript>
+    <div class="alert alert-danger" role="alert">
+        Zur Teilnahme an diesem Experiment wird <em>JavaScript</em> benötigt, welches in Ihrem Browser leider deaktiviert ist.
+        Bitte aktivieren Sie deshalb JavaScript und laden Sie erneut diese Seite
+        oder öffnen Sie Ihren persönlichen Link in einem anderen Browser / auf einem anderen Gerät.
+    </div>
+</noscript>
+
+{% next_button %}
+{% endblock %}

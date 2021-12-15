@@ -1,0 +1,46 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+Text lesen
+{% endblock %}
+
+{% block content %}
+
+<p>
+    Bitte lesen Sie den Text aufmerksam durch.
+</p>
+<div class="alert p-4">
+    <p>
+        Die Covid-19 Pandemie ist die größte weltweite Epidemie seit über 100 Jahren. Die Infektionskrankheit stellt vor
+        allem eine Gefahr für ältere und vorerkrankte Menschen dar. Während der "ersten Welle" im Frühjahr 2020
+        infizierten sich 189.721 Menschen mit dem Coronavirus; 8.882 Menschen (4,7 %) starben daran.
+    </p>
+    <p>
+        Als Reaktion auf die Pandemie wurden in der ersten Welle viele Maßnahmen erlassen, zum Beispiel
+        Kontaktbeschränkungen oder die Maskenpflicht. Diese Maßnahmen hatten, neben den Auswirkungen auf die Ausbreitung
+        von Corona, auch weitreichende Folgen für die Gesellschaft und die Wirtschaft Deutschlands.
+    </p>
+    <p>
+        Während in einigen Branchen die Mitarbeiter im Homeoffice arbeiten konnten, mussten in anderen Bereichen viele
+        Angestellte in Kurzarbeit geschickt werden oder wurden sogar entlassen. Freiberufler aus Bereichen der Kunst und
+        Unterhaltung durften über Monate hinweg nicht arbeiten. Dies und die weitreichenden Kontaktbeschränkungen
+        führten dazu, dass die meisten Menschen Ihren Freizeitbeschäftigungen nicht mehr nachgehen konnten und ihre
+        Freunde oder Familie nur noch teilweise oder sogar gar nicht mehr persönlich treffen konnten. Schulen blieben
+        ebenso über längere Zeit hinweg geschlossen, was für die Familien der Kinder eine weitere dauerhafte Belastung
+        darstellte. Forscher gehen davon aus, dass sich die Zahl von mentalen Beschwerden durch die Regeln in
+        Zusammenhang mit der Pandemie vervielfacht hat.
+    </p>
+    <p>
+        Die langfristigen Auswirkungen der Corona-Maßnahmen auf die Gesellschaft und die Wirtschaft Deutschlands und
+        weltweit sind bis heute nicht vollständig absehbar.
+    </p>
+</div>
+
+
+<p>
+    Bitte klicken Sie nun auf <em>Weiter</em>, um fortzufahren.
+</p>
+
+{% next_button %}
+{% endblock %}

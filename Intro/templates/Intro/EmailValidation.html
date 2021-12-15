@@ -1,0 +1,46 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+Bestätigung Ihrer E-Mail
+{% endblock %}
+
+{% block content %}
+
+<p style="text-align: justify" class="alert alert-secondary">
+    Bitte beachten Sie, dass Sie an dieser Studie nur teilnehmen dürfen, wenn Sie sich in unserer
+    <a href="https://experimente.bonneconlab.uni-bonn.de" target="_blank">Teilnehmerdatenbank</a>
+    angemeldet haben.
+</p>
+
+<p>
+    Bitte geben Sie im folgenden Feld Ihre E-Mail-Adresse an, mit der Sie in der Teilnehmerdatenbank
+    des BonnEconLab/MPI Decision Lab registriert sind. Nur wenn Sie hier die richtige E-Mail-Adresse
+    eingeben, kann Ihre Auszahlung sichergestellt werden.
+</p>
+
+<table style="margin: 20px">
+    <tr>
+        <td>
+            <label for="EMAIL_VALID" style="padding-right: 20px">
+                {{form.EMAIL_VALID.label}}
+            </label>
+        </td>
+        <td>
+            <input type="email" name="EMAIL_VALID" id="EMAIL_VALID" class="form-control" size="40"/>
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>
+            {{formfield_errors 'EMAIL_VALID'}}
+        </td>
+    </tr>
+</table>
+
+<p>
+    Bitte klicken Sie auf <em>Weiter</em>, um fortzufahren.
+</p>
+
+{% next_button %}
+{% endblock %}

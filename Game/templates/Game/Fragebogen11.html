@@ -1,0 +1,130 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+Fragebogen (11/11)
+{% endblock %}
+
+{% block content %}
+
+<p>
+    {{Constants.data.F11.task}}
+</p>
+
+<div class="alert p-4">
+    <p>
+        {{form.F1101_EINKOMMEN.label}}
+    </p>
+    <p>
+        {{form.F1101_EINKOMMEN}}
+    </p>
+</div>
+
+<div class="alert p-4">
+    <p>
+        {{form.F1102_ARBEIT.label}}
+    </p>
+    <p>
+        {{form.F1102_ARBEIT}}
+    </p>
+</div>
+
+<div class="alert p-4">
+    <p>
+        {{form.F1103_GESCHLECHT.label}}
+    </p>
+    <p>
+        {{form.F1103_GESCHLECHT}}
+    </p>
+</div>
+
+<div class="alert p-4">
+    <p>
+        {{form.F1104_ALTER.label}}
+    </p>
+    <p>
+        {{form.F1104_ALTER}}
+    </p>
+</div>
+
+<div class="alert p-4">
+    <p>
+        {{form.F1105_GESCHWISTER.label}}
+    </p>
+    <p>
+        {{form.F1105_GESCHWISTER}}
+    </p>
+</div>
+
+<div class="alert p-4">
+    <p>
+        {{form.F1106_ABINOTE.label}}
+    </p>
+    <p>
+        {{form.F1106_ABINOTE}}
+    </p>
+</div>
+
+<div class="alert p-4">
+    <p>
+        {{form.F1107_MATHENOTE.label}}
+    </p>
+    <p>
+        {{form.F1107_MATHENOTE}}
+    </p>
+</div>
+
+<div class="alert p-4">
+    <p>
+        {{form.F1108_EXPERIMENTE.label}}
+    </p>
+    <p>
+        {{form.F1108_EXPERIMENTE}}
+    </p>
+</div>
+
+<div class="alert p-4">
+    <p>
+        {{form.F1109_STUDIUM.label}}
+    </p>
+    <p>
+        {{form.F1109_STUDIUM}}
+    </p>
+</div>
+
+<div class="alert p-4">
+    <p>
+        {{form.F1110_STUDIENFACH.label}}
+    </p>
+    <p>
+        {{form.F1110_STUDIENFACH}}
+    </p>
+</div>
+
+<div class="alert p-4">
+    <p>
+        {{form.F1111_ZUFRIEDENHEIT.label}}
+    </p>
+    <table>
+        <tr>
+            <td>
+                <span style="padding-right: 10px">{{Constants.data.F11_Q11.label.1}}</span>
+            </td>
+            {{for i in form.F1111_ZUFRIEDENHEIT}}
+            <td class="text-center">
+                <span style="padding-right: 10px">{{i}}</span>
+            </td>
+            {{endfor}}
+            <td>
+                <span style="padding-right: 10px">{{Constants.data.F11_Q11.label.2}}</span>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<p>
+    Bitte klicken Sie nun auf <em>Weiter</em>, um fortzufahren.
+</p>
+
+{% next_button %}
+{% endblock %}

@@ -1,0 +1,50 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+Entscheidungssituationen vom Typ B (2/2)
+{% endblock %}
+
+{% block content %}
+
+<p style="text-align: justify">
+    Wenn eine Entscheidungssituation von Typ B für Ihre Auszahlung ausgewählt wird und Sie die
+    Vorauswahl direkt akzeptiert haben, wird die Vorauswahl umgesetzt. Im obigen Beispiel würden
+    Sie also 2 sicher erhalten.
+</p>
+
+<p style="text-align: justify">
+    Wenn eine Entscheidungssituation von Typ B für Ihre Auszahlung ausgewählt wird und Sie die
+    Vorauswahl nicht direkt akzeptiert haben, wählt der Computer eine der Zeilen der unteren Tabelle
+    zufällig aus. Ihre Entscheidung in dieser Zeile wird dann umgesetzt.
+</p>
+
+<p>
+    Das bedeutet:
+</p>
+
+<ul>
+    <li style="text-align: justify">
+        Sollten Sie in dieser Zeile mit <b>„ja“</b> geantwortet haben, können Sie daraufhin selbst
+        zwischen der Investitionsgelegenheit und der sicheren Auszahlung oben entscheiden und der
+        in der entsprechenden Zeile angegebene Betrag wird als Kosten von Ihrer Auszahlung abgezogen.
+    </li>
+    <li style="text-align: justify">
+        Sollten Sie in dieser Zeile mit <b>„nein“</b> geantwortet haben, sind Sie dementsprechend nicht
+        bereit, die Kosten für die Aufhebung der Vorauswahl zu bezahlen. Somit wird die Vorauswahl direkt umgesetzt
+    </li>
+</ul>
+
+<p class="border-dark alert" style="text-align: justify">
+    <b>
+        Ob die Vorauswahl aufgehoben wird, hängt somit von Ihren Entscheidungen in der unteren
+        Tabelle ab.
+    </b>
+</p>
+
+<p>
+    Bitte klicken Sie nun auf <em>Weiter</em>, um fortzufahren.
+</p>
+
+{% next_button %}
+{% endblock %}

@@ -1,0 +1,209 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+Fragebogen (10/11)
+{% endblock %}
+
+{% block content %}
+
+<p>
+    {{Constants.forms.FRAGEN10.task}}
+</p>
+
+<div style="margin: 30px;">
+    <p>
+        {{form.F1001.label}}
+    </p>
+    <table style="margin-top: -10px">
+        <tr class="figure-caption">
+            <td style="padding-right: 10px">
+                {{Constants.forms.FRAGEN10Q1.label.1}}
+            </td>
+            {{for i in form.F1001}}
+            <td style="padding-right: 10px">
+                {{i}}
+            </td>
+            {{endfor}}
+            <td style="padding-right: 10px">
+                {{Constants.forms.FRAGEN10Q1.label.2}}
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div style="margin: 30px;">
+    <p>
+        {{form.F1002.label}}
+    </p>
+    <table style="margin-top: -10px">
+        <tr class="figure-caption">
+            <td style="padding-right: 10px">
+                {{Constants.forms.FRAGEN10Q2.label.1}}
+            </td>
+            {{for i in form.F1002}}
+            <td style="padding-right: 10px">
+                {{i}}
+            </td>
+            {{endfor}}
+            <td style="padding-right: 10px">
+                {{Constants.forms.FRAGEN10Q2.label.2}}
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div style="margin: 30px;">
+    <p>
+        {{form.F1003.label}}
+    </p>
+    <table style="margin-top: -10px">
+        <tr class="figure-caption">
+            <td style="padding-right: 10px">
+                {{Constants.forms.FRAGEN10Q3.label.1}}
+            </td>
+            {{for i in form.F1003}}
+            <td style="padding-right: 10px">
+                {{i}}
+            </td>
+            {{endfor}}
+            <td style="padding-right: 10px">
+                {{Constants.forms.FRAGEN10Q3.label.2}}
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div style="margin: 30px;">
+    <p>
+        {{form.F1004.label}}
+    </p>
+    <table style="margin-top: -10px">
+        <tr class="figure-caption">
+            <td style="padding-right: 10px">
+                {{Constants.forms.FRAGEN10Q4.label.1}}
+            </td>
+            {{for i in form.F1004}}
+            <td style="padding-right: 10px">
+                {{i}}
+            </td>
+            {{endfor}}
+            <td style="padding-right: 10px">
+                {{Constants.forms.FRAGEN10Q4.label.2}}
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div style="margin: 30px;">
+    <p>
+        {{form.F1005.label}}
+    </p>
+    <div class="figure-caption" style="margin-top: -10px">
+        <p>
+            {{form.F1005}}
+        </p>
+    </div>
+</div>
+
+<div style="margin: 30px;">
+    <p>
+        {{form.F1006.label}}
+    </p>
+    <table style="margin-top: -10px">
+        <tr class="figure-caption">
+            <td style="padding-right: 10px">
+                {{Constants.forms.FRAGEN10Q6.label.1}}
+            </td>
+            {{for i in form.F1006}}
+            <td style="padding-right: 10px">
+                {{i}}
+            </td>
+            {{endfor}}
+            <td style="padding-right: 10px">
+                {{Constants.forms.FRAGEN10Q6.label.2}}
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div style="margin: 30px;">
+    <p>
+        {{form.F1007.label}}
+    </p>
+    <table style="margin-top: -10px">
+        <tr class="figure-caption">
+            <td style="padding-right: 10px">
+                {{Constants.forms.FRAGEN10Q7.label.1}}
+            </td>
+            {{for i in form.F1007}}
+            <td style="padding-right: 10px">
+                {{i}}
+            </td>
+            {{endfor}}
+            <td style="padding-right: 10px">
+                {{Constants.forms.FRAGEN10Q7.label.2}}
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div style="margin: 30px;">
+    <p>
+        {{form.F1008.label}}
+    </p>
+    <div class="figure-caption" style="margin-top: -10px">
+        <p>
+            {{form.F1008}}
+        </p>
+    </div>
+</div>
+
+<div style="margin: 30px;">
+    <p>
+        {{form.F1009.label}}
+    </p>
+    <table style="margin-top: -10px">
+        <tr class="figure-caption">
+            <td style="padding-right: 10px">
+                {{Constants.forms.FRAGEN10Q9.label.1}}
+            </td>
+            {{for i in form.F1009}}
+            <td style="padding-right: 10px">
+                {{i}}
+            </td>
+            {{endfor}}
+            <td style="padding-right: 10px">
+                {{Constants.forms.FRAGEN10Q9.label.2}}
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div style="margin: 30px;">
+    <p>
+        {{form.F1010.label}}
+    </p>
+    <table style="margin-top: -10px">
+        <tr class="figure-caption">
+            <td style="padding-right: 10px">
+                {{Constants.forms.FRAGEN10Q10.label.1}}
+            </td>
+            {{for i in form.F1010}}
+            <td style="padding-right: 10px">
+                {{i}}
+            </td>
+            {{endfor}}
+            <td style="padding-right: 10px">
+                {{Constants.forms.FRAGEN10Q10.label.2}}
+            </td>
+        </tr>
+    </table>
+</div>
+
+<p>
+    Bitte klicken Sie nun auf <em>Weiter</em>, um fortzufahren.
+</p>
+
+{% next_button %}
+{% endblock %}

@@ -1,0 +1,42 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+Fragebogen (4/11)
+{% endblock %}
+
+{% block content %}
+
+<p>
+    {{Constants.forms.FRAGEN4.task}}
+</p>
+
+{{for i in form}}
+<div style="margin: 30px">
+    <p>
+        {{i.label}}
+    </p>
+    <table style="margin-top: -10px">
+        <tr class="figure-caption">
+            <td style="padding-right: 10px">
+                {{Constants.forms.FRAGEN4.label.1}}
+            </td>
+            {{for j in i}}
+            <td style="padding-right: 10px">
+                {{j}}
+            </td>
+            {{endfor}}
+            <td style="padding-right: 10px">
+                {{Constants.forms.FRAGEN4.label.2}}
+            </td>
+        </tr>
+    </table>
+</div>
+{{endfor}}
+
+<p>
+    Bitte klicken Sie nun auf <em>Weiter</em>, um fortzufahren.
+</p>
+
+{% next_button %}
+{% endblock %}

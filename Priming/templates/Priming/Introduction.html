@@ -1,0 +1,20 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+Textverständnis
+{% endblock %}
+
+{% block content %}
+
+<p>
+    Bevor Sie mit dem Hauptteil des Experiments beginnen, lesen Sie bitte noch den folgenden Text zu einem aktuellen
+    Thema und beantworten Sie im Anschluss die Fragen.
+</p>
+
+<p>
+    Bitte klicken Sie nun auf <em>Weiter</em>, um fortzufahren.
+</p>
+
+{% next_button %}
+{% endblock %}

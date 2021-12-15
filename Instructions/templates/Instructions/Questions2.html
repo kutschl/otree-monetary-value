@@ -1,0 +1,50 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+Übungsaufgaben (2/3)
+{% endblock %}
+
+{% block content %}
+
+<p>
+    {{Constants.forms.CONTROL2.task}}
+</p>
+
+<div style="margin: 30px">
+    <figure class="figure">
+        <img src="{{static 'abbildung2.png'}}" class="figure-img img-fluid">
+        <figcaption class="figure-caption" style="padding-bottom: 10px; text-align: right">
+            <a href="{{static 'abbildung2.png'}}" target="_blank">Vergrößern</a>
+        </figcaption>
+    </figure>
+</div>
+
+<div style="margin: 30px">
+    <p>
+        {{Constants.forms.CONTROL2Q1.questions.1}}
+    </p>
+    <div class="figure-caption" style="margin-top: -10px; margin-left: 20px">
+        <p>
+            {{form.CQ201}}
+        </p>
+    </div>
+</div>
+
+<div style="margin: 30px">
+    <p>
+        {{Constants.forms.CONTROL2Q2.questions.1}}
+    </p>
+    <div class="figure-caption" style="margin-top: -10px; margin-left: 20px">
+        <p>
+            {{form.CQ202}}
+        </p>
+    </div>
+</div>
+
+<p>
+    Bitte klicken Sie nun auf <em>Weiter</em>, um fortzufahren.
+</p>
+
+{% next_button %}
+{% endblock %}

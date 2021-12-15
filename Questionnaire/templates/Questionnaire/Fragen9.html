@@ -1,0 +1,160 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+Fragebogen (9/11)
+{% endblock %}
+
+{% block content %}
+
+<p>
+    {{Constants.forms.FRAGEN9.task.1}}
+</p>
+
+<div style="margin: 30px;">
+    <p>
+        {{Constants.forms.FRAGEN9.task.2}}
+    </p>
+
+    <div style="margin: 15px 0 30px 30px;">
+        <p>
+            {{form.F901.label}}
+        </p>
+        <div class="figure-caption" style="margin-top: -10px">
+            <p>
+                {{form.F901}}
+            </p>
+        </div>
+        <p>
+            {{form.F902.label}}
+        </p>
+        <div class="figure-caption" style="margin-top: -10px">
+            <p>
+                {{form.F902}}
+            </p>
+        </div>
+        <p>
+            {{form.F903.label}}
+        </p>
+        <div class="figure-caption" style="margin-top: -10px">
+            <p>
+                {{form.F903}}
+            </p>
+        </div>
+        <p>
+            {{form.F904.label}}
+        </p>
+        <div style="margin-top: -10px">
+            <p>
+                <input style="font-size:.875em;" class="form-control" name="F904" id="F904" type="text" size="50"/>
+                {{formfield_errors 'F904'}}
+            </p>
+        </div>
+    </div>
+</div>
+
+<div style="margin: 30px;">
+    <p>
+        {{Constants.forms.FRAGEN9.task.3}}
+    </p>
+    <div style="margin: 15px 0 30px 30px;">
+        <table>
+            <tr>
+                <td style="padding-right: 10px">
+                    {{form.F905.label}}
+                </td>
+                <td class="figure-caption" style="padding-top: 5px">
+                    {{form.F905}}
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-right: 10px">
+                    {{form.F906.label}}
+                </td>
+                <td class="figure-caption" style="padding-top: 5px">
+                    {{form.F906}}
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-right: 10px">
+                    {{form.F907.label}}
+                </td>
+                <td class="figure-caption" style="padding-top: 5px">
+                    {{form.F907}}
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-right: 10px">
+                    {{form.F908.label}}
+                </td>
+                <td class="figure-caption" style="padding-top: 5px">
+                    {{form.F908}}
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-right: 10px">
+                    {{form.F909.label}}
+                </td>
+                <td class="figure-caption" style="padding-top: 5px">
+                    {{form.F909}}
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-right: 10px">
+                    {{form.F910.label}}
+                </td>
+                <td class="figure-caption" style="padding-top: 5px">
+                    {{form.F910}}
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-right: 10px">
+                    {{form.F911.label}}
+                </td>
+                <td class="figure-caption" style="padding-top: 5px">
+                    {{form.F911}}
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-right: 10px">
+                    {{form.F912.label}}
+                </td>
+                <td class="figure-caption" style="padding-top: 5px">
+                    {{form.F912}}
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-right: 10px">
+                    {{form.F913.label}}
+                </td>
+                <td class="figure-caption" style="padding-top: 5px">
+                    {{form.F913}}
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-right: 10px">
+                    {{form.F914.label}}
+                </td>
+                <td class="figure-caption" style="padding-top: 5px">
+                    {{form.F914}}
+                </td>
+            </tr>
+            <tr>
+                <td style="padding-right: 10px">
+                    {{form.F915.label}}
+                </td>
+                <td style="padding-top: 5px">
+                    <input style="font-size:.875em;" class="form-control" name="F915" id="F915" type="text" size="30"/>
+                    {{formfield_errors 'F915'}}
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<p>
+    Bitte klicken Sie nun auf <em>Weiter</em>, um fortzufahren.
+</p>
+
+{% next_button %}
+{% endblock %}

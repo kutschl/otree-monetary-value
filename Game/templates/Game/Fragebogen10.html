@@ -1,0 +1,205 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+Fragebogen (10/11)
+{% endblock %}
+
+{% block content %}
+
+<p>
+    {{Constants.data.F10.task}}
+</p>
+
+<div class="alert p-4">
+    <p>
+        {{form.F1001.label}}
+    </p>
+    <table>
+        <tr>
+            <td>
+                <span style="padding-right: 10px">{{Constants.data.F10_Q1.label.1}}</span>
+            </td>
+            {{for i in form.F1001}}
+            <td class="text-center">
+                <span style="padding-right: 10px">{{i}}</span>
+            </td>
+            {{endfor}}
+            <td>
+                <span style="padding-right: 10px">{{Constants.data.F10_Q1.label.2}}</span>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div class="alert p-4">
+    <p>
+        {{form.F1002.label}}
+    </p>
+    <table>
+        <tr>
+            <td>
+                <span style="padding-right: 10px">{{Constants.data.F10_Q2.label.1}}</span>
+            </td>
+            {{for i in form.F1002}}
+            <td class="text-center">
+                <span style="padding-right: 10px">{{i}}</span>
+            </td>
+            {{endfor}}
+            <td>
+                <span style="padding-right: 10px">{{Constants.data.F10_Q2.label.2}}</span>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div class="alert p-4">
+    <p>
+        {{form.F1003.label}}
+    </p>
+    <table>
+        <tr>
+            <td>
+                <span style="padding-right: 10px">{{Constants.data.F10_Q3.label.1}}</span>
+            </td>
+            {{for i in form.F1003}}
+            <td class="text-center">
+                <span style="padding-right: 10px">{{i}}</span>
+            </td>
+            {{endfor}}
+            <td>
+                <span style="padding-right: 10px">{{Constants.data.F10_Q3.label.2}}</span>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div class="alert p-4">
+    <p>
+        {{form.F1004.label}}
+    </p>
+    <table>
+        <tr>
+            <td>
+                <span style="padding-right: 10px">{{Constants.data.F10_Q4.label.1}}</span>
+            </td>
+            {{for i in form.F1004}}
+            <td class="text-center">
+                <span style="padding-right: 10px">{{i}}</span>
+            </td>
+            {{endfor}}
+            <td>
+                <span style="padding-right: 10px">{{Constants.data.F10_Q4.label.2}}</span>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div class="alert p-4">
+    <p>
+        {{form.F1005.label}}
+    </p>
+    <p>
+        {{form.F1005}}
+    </p>
+</div>
+
+<div class="alert p-4">
+    <p>
+        {{form.F1006.label}}
+    </p>
+    <table>
+        <tr>
+            <td>
+                <span style="padding-right: 10px">{{Constants.data.F10_Q6.label.1}}</span>
+            </td>
+            {{for i in form.F1006}}
+            <td class="text-center">
+                <span style="padding-right: 10px">{{i}}</span>
+            </td>
+            {{endfor}}
+            <td>
+                <span style="padding-right: 10px">{{Constants.data.F10_Q6.label.2}}</span>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div class="alert p-4">
+    <p>
+        {{form.F1007.label}}
+    </p>
+    <table>
+        <tr>
+            <td>
+                <span style="padding-right: 10px">{{Constants.data.F10_Q7.label.1}}</span>
+            </td>
+            {{for i in form.F1007}}
+            <td class="text-center">
+                <span style="padding-right: 10px">{{i}}</span>
+            </td>
+            {{endfor}}
+            <td>
+                <span style="padding-right: 10px">{{Constants.data.F10_Q7.label.2}}</span>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div class="alert p-4">
+    <p>
+        {{form.F1008.label}}
+    </p>
+    <p>
+        {{form.F1008}}
+    </p>
+</div>
+
+<div class="alert p-4">
+    <p>
+        {{form.F1009.label}}
+    </p>
+    <table>
+        <tr>
+            <td>
+                <span style="padding-right: 10px">{{Constants.data.F10_Q9.label.1}}</span>
+            </td>
+            {{for i in form.F1009}}
+            <td class="text-center">
+                <span style="padding-right: 10px">{{i}}</span>
+            </td>
+            {{endfor}}
+            <td>
+                <span style="padding-right: 10px">{{Constants.data.F10_Q9.label.2}}</span>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div class="alert p-4">
+    <p>
+        {{form.F1010.label}}
+    </p>
+    <table>
+        <tr>
+            <td>
+                <span style="padding-right: 10px">{{Constants.data.F10_Q10.label.1}}</span>
+            </td>
+            {{for i in form.F1010}}
+            <td class="text-center">
+                <span style="padding-right: 10px">{{i}}</span>
+            </td>
+            {{endfor}}
+            <td>
+                <span style="padding-right: 10px">{{Constants.data.F10_Q10.label.2}}</span>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<p>
+    Bitte klicken Sie nun auf <em>Weiter</em>, um fortzufahren.
+</p>
+
+{% next_button %}
+{% endblock %}

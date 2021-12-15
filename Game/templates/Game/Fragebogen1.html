@@ -1,0 +1,61 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+Fragebogen (1/11)
+{% endblock %}
+
+{% block content %}
+
+<p>
+    {{Constants.data.F1.task}}
+</p>
+
+<div class="alert p-4">
+    <p>
+        {{form.F101.label}}
+    </p>
+    <table class="table table-borderless">
+        <tr>
+            <td>
+                {{Constants.data.F1_Q1.label.1}}
+            </td>
+            {{for i in form.F101}}
+            <td class="text-center">
+                {{i}}
+            </td>
+            {{endfor}}
+            <td>
+                {{Constants.data.F1_Q1.label.2}}
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div class="alert p-4">
+    <p>
+        {{form.F102.label}}
+    </p>
+    <table class="table table-borderless">
+        <tr>
+            <td>
+                {{Constants.data.F1_Q2.label.1}}
+            </td>
+            {{for i in form.F102}}
+            <td class="text-center">
+                {{i}}
+            </td>
+            {{endfor}}
+            <td>
+                {{Constants.data.F1_Q2.label.2}}
+            </td>
+        </tr>
+    </table>
+</div>
+
+<p>
+    Bitte klicken Sie nun auf <em>Weiter</em>, um fortzufahren.
+</p>
+
+{% next_button %}
+{% endblock %}

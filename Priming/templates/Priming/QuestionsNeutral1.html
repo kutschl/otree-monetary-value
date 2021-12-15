@@ -1,0 +1,32 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+Textverständnis (2/3)
+{% endblock %}
+
+{% block content %}
+
+<p>
+    {{Constants.forms.NEUTRAL1.task}}
+</p>
+
+{{for i in form}}
+<div style="margin: 30px 30px 30px 30px">
+    <p>
+        {{i.label}}
+    </p>
+    <div class="figure-caption" style="margin-top: -10px">
+        <p>
+            {{i}}
+        </p>
+    </div>
+</div>
+{{endfor}}
+
+<p>
+    Bitte klicken Sie nun auf <em>Weiter</em>, um fortzufahren.
+</p>
+
+{% next_button %}
+{% endblock %}

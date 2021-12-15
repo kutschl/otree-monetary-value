@@ -1,0 +1,57 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+Übungsfragen (3/3)
+{% endblock %}
+
+{% block content %}
+
+<p>
+    {{Constants.data.C3.task}}
+</p>
+
+<div class="alert p4">
+    <figure>
+        <img class="img-fluid"
+             src="{{static 'abbildung2.png'}}"
+             alt="Hier sollte Ihnen eine Abbildung angezeigt werden. Bitte melden Sie sich beim Leiter des Experiments.">
+        <figcaption class="figure-caption">
+            <a href="{{static 'abbildung2.png'}}" target="_blank">Vergrößern</a>
+        </figcaption>
+    </figure>
+
+</div>
+
+<div class="alert p4">
+    <p>
+        {{Constants.data.C301.questions.1}}
+    </p>
+    <div class="alert">
+        {{for i in form.C301}}
+        <p>
+            <span style="padding-right: 10px">{{i}}</span><span>{{i.label}}</span>
+        </p>
+        {{endfor}}
+    </div>
+</div>
+
+<div class="alert p4">
+    <p>
+        {{Constants.data.C302.questions.1}}
+    </p>
+    <div class="alert">
+        {{for i in form.C302}}
+        <p>
+            <span style="padding-right: 10px">{{i}}</span><span>{{i.label}}</span>
+        </p>
+        {{endfor}}
+    </div>
+</div>
+
+<p>
+    Bitte klicken Sie nun auf <em>Weiter</em>, um fortzufahren.
+</p>
+
+{% next_button %}
+{% endblock %}

@@ -1,0 +1,32 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+Entscheidungssituationen vom Typ A (2/2)
+{% endblock %}
+
+{% block content %}
+
+<p style="text-align: justify">
+    Wenn eine Entscheidungssituation von Typ A für Ihre Auszahlung ausgewählt wird, wählt der
+    Computer eine der Zeilen in der Tabelle zufällig aus. Ihre Entscheidung in dieser Zeile wird dann
+    umgesetzt. Das bedeutet:
+</p>
+<ul>
+    <li style="text-align: justify">
+        Sollten Sie sich in der ausgewählten Zeile für die <b>sichere Zahlung</b> entschieden haben, erhalten Sie den
+        jeweiligen Betrag ausgezahlt.
+    </li>
+    <li style="text-align: justify">
+        Sollten Sie sich in der ausgewählten Zeile für die <b>Investitionsgelegenheit</b> entschieden haben, wird die
+        entsprechende Lotterie vom Computer ausgelost und dadurch Ihre Auszahlung bestimmt.
+    </li>
+</ul>
+
+
+<p>
+    Bitte klicken Sie nun auf <em>Weiter</em>, um fortzufahren.
+</p>
+
+{% next_button %}
+{% endblock %}

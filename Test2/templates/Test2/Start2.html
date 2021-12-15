@@ -1,0 +1,19 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+Zahl 2
+{% endblock %}
+
+{% block content %}
+
+<p>
+    Zufallszahl ist {{form.RANDOM}} = 2
+</p>
+
+<p>
+    Bitte klicken Sie nun auf <em>Weiter</em>, um fortzufahren.
+</p>
+
+{% next_button %}
+{% endblock %}

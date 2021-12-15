@@ -1,0 +1,45 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+Textverständnis (1/2)
+{% endblock %}
+
+{% block content %}
+
+<p>
+    Bitte lesen Sie den Text aufmerksam durch.
+</p>
+<div style="margin: 30px; text-align: justify">
+    <p>
+        Die Covid-19 Pandemie ist die größte weltweite Epidemie seit über 100 Jahren. Die Infektionskrankheit stellt
+        eine besonders große Gefahr für ältere und vorerkrankte Menschen dar. In diesen "Risikogruppen" treten schwere
+        Verläufe der Krankheit und Todesfälle deutlich häufiger auf, wobei auch gesunde und jüngere Betroffene teilweise
+        von schwereren Verläufen oder Langzeitfolgen betroffen sind. Die Ansteckung und Verbreitung erfolgen über das
+        Einatmen kleinster Partikel in der Luft (Aerosole), was insbesondere in geschlossenen und nicht ausreichend
+        belüfteten Räumen vermehrt geschieht.
+    </p>
+    <p>
+        Während der "ersten Welle" im Frühjahr 2020 infizierten sich 189.721 Menschen mit dem Coronavirus;
+        8.882 Menschen (4,7 %) starben daran. In Deutschland ist die Zahl der Toten, welche mit und an Corona während
+        der ersten Welle starben jedoch vergleichsweise niedrig, mit zeitweisen Maximalwerten von 3 Toten pro 1
+        Millionen Einwohner. In anderen Ländern, war die Anzahl von Verstorbenen teilweise wesentlich höher.
+        In Schweden zum Beispiel betrug die Zahl der Toten pro 1 Millionen Einwohner in Spitzenzeiten über das
+        Dreifache (10.57 Tote pro 1 Mio. Einwohner). Dies lässt sich unter anderem durch die weniger strengen
+        Maßnahmen zur Eindämmung der Pandemie erklären.
+    </p>
+    <p>
+        Im Frühjahr 2020 wurden in Deutschland als Reaktion auf die Pandemie viele Maßnahmen zum Schutz der Bevölkerung
+        erlassen, zum Beispiel Kontaktbeschränkungen oder die Maskenpflicht. Diese Maßnahmen haben zu einer
+        Verlangsamung der Ausbreitung geführt und dazu, dass - trotz hoher Belastung - das Gesundheitssystem stabil
+        geblieben ist und die Versorgung von Covid-Erkrankten fortlaufend gewährleistet werden konnte.
+    </p>
+</div>
+
+
+<p>
+    Bitte klicken Sie nun auf <em>Weiter</em>, um fortzufahren.
+</p>
+
+{% next_button %}
+{% endblock %}

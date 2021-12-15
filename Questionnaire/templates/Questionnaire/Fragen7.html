@@ -1,0 +1,35 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+Fragebogen (7/11)
+{% endblock %}
+
+{% block content %}
+
+<p>
+    {{Constants.forms.FRAGEN7.task}}
+</p>
+
+<div style="margin: 30px">
+    <p>
+        <label for="F701" class="form-label">{{form.F701.label}}</label>
+        <input class="form-control" style="font-size:.875em;" name="F701" id="F701" type="text" size="50"/>
+        {{formfield_errors 'F701'}}
+    </p>
+</div>
+
+<div style="margin: 30px">
+    <p>
+        <label for="F702" class="form-label">{{form.F702.label}}</label>
+        <input class="form-control" style="font-size:.875em;" name="F702" id="F702" type="text" size="50"/>
+        {{formfield_errors 'F702'}}
+    </p>
+</div>
+
+<p>
+    Bitte klicken Sie nun auf <em>Weiter</em>, um fortzufahren.
+</p>
+
+{% next_button %}
+{% endblock %}

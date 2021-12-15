@@ -1,0 +1,33 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+Fragebogen (7/11)
+{% endblock %}
+
+{% block content %}
+
+<p>
+    {{Constants.data.F7.task}}
+</p>
+
+<div class="alert p-4">
+    <p>
+        <label for="F701">{{form.F701.label}}</label>
+    </p>
+    <input name="F701" id="F701" type="text" size="30"/>
+</div>
+
+<div class="alert p-4">
+    <p>
+        <label for="F701">{{form.F702.label}}</label>
+    </p>
+    <input name="F702" id="F702" type="text" size="30"/>
+</div>
+
+<p>
+    Bitte klicken Sie nun auf <em>Weiter</em>, um fortzufahren.
+</p>
+
+{% next_button %}
+{% endblock %}

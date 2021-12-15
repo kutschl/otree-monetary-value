@@ -1,0 +1,45 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+Das Experiment: 24 Entscheidungssituationen
+{% endblock %}
+
+{% block content %}
+
+<p style="text-align: justify;">
+    Sie stehen im Rahmen dieses Experiments 24 verschiedenen Entscheidungssituationen gegenüber. Generell geht es in
+    jeder dieser 24 Entscheidungssituationen darum, sich jeweils zwischen zwei Alternativen zu entscheiden:
+    Alternative A ist immer eine Investitionsgelegenheit, Alternative B immer eine sichere Auszahlung.
+</p>
+
+<p style="text-align: justify">
+    Ein Beispiel für eine Investitionsgelegenheit ist:
+    <br>
+    <i>
+        Mit einer Wahrscheinlichkeit von 50 % erhalten Sie 5 Euro und mit einer Wahrscheinlichkeit von 50%
+        erhalten Sie 0 Euro.
+    </i>
+</p>
+
+<p style="text-align: justify;">
+    Die Gewinnwahrscheinlichkeiten und die Euro-Beträge, die Sie erhalten können, variieren zwischen
+    den verschiedenen Entscheidungssituationen. Die Entscheidungssituationen werden in Form einer
+    <b>Entscheidungstabelle</b> entweder mit <b>mehreren Zeilen (Typ A)</b> oder <b>nur mit einer
+    Zeile (Typ B)</b> angezeigt. Die Reihenfolge, in der die Entscheidungssituationen angezeigt werden,
+    wird zufällig ausgewählt. Insgesamt treffen alle Teilnehmer aber genau dieselben Entscheidungen.
+</p>
+
+<p class="alert border-dark" style="text-align: justify">
+    <b>
+        Am Ende des Experiments wird eine der 24 Entscheidungssituationen zufällig ausgewählt, um
+        Ihre Auszahlung zu bestimmen.
+    </b>
+</p>
+
+<p>
+    Bitte klicken Sie nun auf <em>Weiter</em>, um fortzufahren.
+</p>
+
+{% next_button %}
+{% endblock %}

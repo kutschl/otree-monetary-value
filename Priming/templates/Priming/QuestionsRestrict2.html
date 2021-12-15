@@ -1,0 +1,41 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+Textverständnis (3/3)
+{% endblock %}
+
+{% block content %}
+
+<p>
+    {{Constants.forms.RESTRICT2.task}}
+</p>
+
+{{for i in form}}
+<div style="margin: 30px">
+    <p>
+        {{i.label}}
+    </p>
+    <table style="margin-top: -10px">
+        <tr class="figure-caption">
+            <td style="padding-right: 10px">
+                {{Constants.forms.RESTRICT2.label.1}}
+            </td>
+            {{for j in i}}
+            <td style="padding-right: 10px">
+                {{j}}</td>
+            {{endfor}}
+            <td style="padding-right: 10px">
+                {{Constants.forms.RESTRICT2.label.2}}
+            </td>
+        </tr>
+    </table>
+</div>
+{{endfor}}
+
+<p>
+    Bitte klicken Sie nun auf <em>Weiter</em>, um fortzufahren.
+</p>
+
+{% next_button %}
+{% endblock %}

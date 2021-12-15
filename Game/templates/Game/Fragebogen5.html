@@ -1,0 +1,42 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+Fragebogen (5/11)
+{% endblock %}
+
+{% block content %}
+
+<p>
+    {{Constants.data.F5.task}}
+</p>
+
+{{for i in form}}
+<div class="alert p-4">
+    <p>
+        {{i.label}}
+    </p>
+    <table>
+        <tr>
+            <td>
+                <span style="padding-right: 10px">{{Constants.data.F5.label.1}}</span>
+            </td>
+            {{for j in i}}
+            <td class="text-center">
+                <span style="padding-right: 10px">{{j}}</span>
+            </td>
+            {{endfor}}
+            <td>
+                <span style="padding-right: 10px">{{Constants.data.F5.label.2}}</span>
+            </td>
+        </tr>
+    </table>
+</div>
+{{endfor}}
+
+<p>
+    Bitte klicken Sie nun auf <em>Weiter</em>, um fortzufahren.
+</p>
+
+{% next_button %}
+{% endblock %}

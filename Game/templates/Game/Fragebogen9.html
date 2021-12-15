@@ -1,0 +1,149 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+Fragebogen (9/11)
+{% endblock %}
+
+{% block content %}
+
+<p>
+    {{Constants.data.F9.task}}
+</p>
+
+<div class="alert p-4">
+    <p>
+        {{Constants.data.F9_Q1toQ4.task}}
+    </p>
+    <div style="margin: 30px 0 0 40px">
+        <p>
+            {{form.F901.label}}
+        </p>
+        <p>
+            {{form.F901}}
+        </p>
+        <p>
+            {{form.F902.label}}
+        </p>
+        <p>
+            {{form.F902}}
+        </p>
+        <p>
+            {{form.F903.label}}
+        </p>
+        <p>
+            {{form.F903}}
+        </p>
+        <p>
+            {{form.F904.label}}
+        </p>
+        <p>
+            {{form.F904}}
+        </p>
+    </div>
+</div>
+
+<div class="alert p-4">
+    <p>
+        {{Constants.data.F9_Q5toQ15.task}}
+    </p>
+    <div style="margin: 30px 0 0 40px">
+        <table>
+            <tr>
+                <td>
+                    <span style="padding-right: 20px">{{form.F905.label}}</span>
+                </td>
+                <td>
+                    {{form.F905}}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span style="padding-right: 20px">{{form.F906.label}}</span>
+                </td>
+                <td>
+                    {{form.F906}}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span style="padding-right: 20px">{{form.F907.label}}</span>
+                </td>
+                <td>
+                    {{form.F907}}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span style="padding-right: 20px">{{form.F908.label}}</span>
+                </td>
+                <td>
+                    {{form.F908}}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span style="padding-right: 20px">{{form.F909.label}}</span>
+                </td>
+                <td>
+                    {{form.F909}}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span style="padding-right: 20px">{{form.F910.label}}</span>
+                </td>
+                <td>
+                    {{form.F910}}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span style="padding-right: 20px">{{form.F911.label}}</span>
+                </td>
+                <td>
+                    {{form.F911}}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span style="padding-right: 20px">{{form.F912.label}}</span>
+                </td>
+                <td>
+                    {{form.F912}}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span style="padding-right: 20px">{{form.F913.label}}</span>
+                </td>
+                <td>
+                    {{form.F913}}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span style="padding-right: 20px">{{form.F914.label}}</span>
+                </td>
+                <td>
+                    {{form.F914}}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span style="padding-right: 20px">{{form.F915.label}}</span>
+                </td>
+                <td>
+                    {{form.F915}}
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<p>
+    Bitte klicken Sie nun auf <em>Weiter</em>, um fortzufahren.
+</p>
+
+{% next_button %}
+{% endblock %}

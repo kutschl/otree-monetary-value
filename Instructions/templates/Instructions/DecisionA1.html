@@ -1,0 +1,45 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+Entscheidungssituationen vom Typ A (1/2)
+{% endblock %}
+
+{% block content %}
+
+<p style="text-align: justify">
+    In den Entscheidungssituationen von Typ A treffen Sie mehrere Entscheidungen, die mit Hilfe
+    einer Tabelle abgefragt werden. In jeder Zeile der Tabelle entscheiden Sie zwischen Alternative A
+    (einer Investitionsgelegenheit) und Alternative B (einer sicheren Auszahlung). Die sichere
+    Auszahlung variiert dabei über die Entscheidungen (Zeilen) hinweg.
+</p>
+
+<p>
+    <figure class="figure">
+        <figcaption class="figure-caption" style="padding-bottom: 10px">
+            Beispiel für Entscheidungsbildschirm von Typ A:
+            (<a href="{{static 'abbildung1.png'}}" class="" target="_blank">Vergrößern</a>)
+
+        </figcaption>
+        <img src="{{static 'abbildung1.png'}}" class="figure-img img-fluid">
+    </figure>
+</p>
+
+<p style="text-align: justify">
+    Nachdem Sie für alle Zeilen der Tabelle eine Entscheidung getroffen haben, werden wir Ihnen
+    noch eine weitere, kleinere Tabelle vorlegen, die Ihre Entscheidung noch genauer erfragt. Das
+    Prinzip ist bei beiden Tabellen dasselbe.
+</p>
+
+<p class="alert border-dark" style="text-align: justify">
+    <b>
+        Jede einzelne Entscheidung in der Tabelle ist wichtig und potenziell auszahlungsrelevant.
+    </b>
+</p>
+
+<p>
+    Bitte klicken Sie nun auf <em>Weiter</em>, um fortzufahren.
+</p>
+
+{% next_button %}
+{% endblock %}

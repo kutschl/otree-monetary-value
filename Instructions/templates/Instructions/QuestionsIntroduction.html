@@ -1,0 +1,27 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+Übungsaufgaben und Verständnisfragen
+{% endblock %}
+
+{% block content %}
+
+<p style="text-align: justify">
+    Bevor Sie mit der Bearbeitung der 24 Entscheidungssituationen beginnen, bitten wir Sie, am
+    Computer einige Übungsfragen zu den Entscheidungen zu beantworten. Das Beantworten dieser
+    Fragen soll es Ihnen erleichtern, sich mit der Entscheidungssituation vertraut zu machen.
+</p>
+
+<p style="text-align: justify">
+    Falls Sie jetzt Fragen haben oder während der Beantwortung der Übungsfragen Ihrerseits Fragen
+    entstehen, halten Sie bitte die Hand aus der Kabine. Ein Leiter des Experiments wird dann an
+    Ihren Platz kommen, um Ihre Fragen zu beantworten.
+</p>
+
+<p>
+    Bitte klicken Sie nun auf <em>Weiter</em>, um fortzufahren.
+</p>
+
+{% next_button %}
+{% endblock %}

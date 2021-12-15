@@ -1,0 +1,57 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+Entscheidungssituationen vom Typ B (1/2)
+{% endblock %}
+
+{% block content %}
+
+<p style="text-align: justify;">
+    In den Entscheidungssituationen von Typ B wird ebenfalls eine Investitionsgelegenheit <b>einer</b>
+    sicheren Auszahlung gegenübergestellt (somit handelt es sich um eine Entscheidungstabelle mit
+    lediglich einer Zeile). In dieser Entscheidungssituation wurde zudem bereits eine Vorauswahl für
+    Sie getroffen und implementiert. In dem Fall haben Sie zwei Möglichkeiten:
+</p>
+
+<p style="text-align: justify;">
+    Entweder akzeptieren Sie diese Vorauswahl direkt und klicken den entsprechenden Button, der
+    Sie zur nächsten Entscheidungssituation bringt.
+</p>
+
+<p style="text-align: justify;">
+    Alternativ können Sie mit Hilfe einer weiteren Tabelle angeben, wieviel Sie bereit sind zu bezahlen,
+    um die Entscheidung wieder selbst treffen zu können. Hier müssen Sie wie zuvor für jede
+    Zeile eine Entscheidung treffen und auswählen, ob Sie bereit sind, einen bestimmten Betrag zu
+    bezahlen, um die Entscheidung selbst treffen zu können.
+</p>
+
+<p>
+    <figure class="figure">
+        <figcaption class="figure-caption" style="padding-bottom: 10px">
+            Beispiel für Entscheidungsbildschirm von Typ B:
+            (<a href="{{static 'abbildung2.png'}}" class="" target="_blank">Vergrößern</a>)
+
+        </figcaption>
+        <img src="{{static 'abbildung2.png'}}" class="figure-img img-fluid">
+    </figure>
+</p>
+
+<p style="text-align: justify;">
+    Nachdem Sie für alle Zeilen der Tabelle eine Entscheidung getroffen haben, werden wir Ihnen
+    noch eine weitere, kleinere Tabelle vorlegen, die Ihre Entscheidung noch genauer erfragt. Das
+    Prinzip ist bei beiden Tabellen dasselbe.
+</p>
+
+<p class="alert border-dark" style="text-align: justify">
+    <b>
+        Auch hier ist jede einzelne Entscheidung wichtig und potenziell auszahlungsrelevant.
+    </b>
+</p>
+
+<p>
+    Bitte klicken Sie nun auf <em>Weiter</em>, um fortzufahren.
+</p>
+
+{% next_button %}
+{% endblock %}

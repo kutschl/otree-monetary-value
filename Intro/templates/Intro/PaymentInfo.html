@@ -1,0 +1,64 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+Ihre Bankverbindung
+{% endblock %}
+
+{% block content %}
+<p style="text-align: justify">
+    Bitte geben Sie Ihre persönlichen Daten und Ihre Bankverbindung an, damit wir Ihnen später Ihre Auszahlung
+    überweisen können. Die Übertragung der Daten erfolgt verschlüsselt.
+</p>
+
+<div class="row">
+    <div class="col">
+        {{formfield player.VORNAME}}
+        {{formfield_errors 'VORNAME'}}
+
+    </div>
+    <div class="col">
+        {{formfield player.NACHNAME}}
+        {{formfield_errors 'NACHNAME'}}
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+        {{formfield player.STRASSE}}
+        {{formfield_errors 'STRASSE'}}
+    </div>
+    <div class="col">
+        {{formfield player.HAUSNUMMER}}
+        {{formfield_errors 'HAUSNUMMER'}}
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+        {{formfield player.PLZ}}
+        {{formfield_errors 'PLZ'}}
+    </div>
+    <div class="col">
+        {{formfield player.ORT}}
+        {{formfield_errors 'ORT'}}
+    </div>
+</div>
+
+<div class="row" style="margin-top: 30px; margin-bottom: 30px">
+    <div class="col">
+        {{formfield player.IBAN}}
+        {{formfield_errors 'IBAN'}}
+
+    </div>
+    <div class="col">
+        {{formfield player.BIC}}
+        {{formfield_errors 'BIC'}}
+    </div>
+</div>
+
+
+<p>
+    Bitte klicken Sie auf <em>Weiter</em>, um fortzufahren.
+</p>
+
+{% next_button %}
+{% endblock %}

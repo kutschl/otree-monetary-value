@@ -1,0 +1,58 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+Fragebogen (8/11)
+{% endblock %}
+
+{% block content %}
+
+<p>
+    {{Constants.data.F8.task}}
+</p>
+
+<div class="alert p-4">
+    <p>
+        {{form.F801.label}}
+    </p>
+    <table>
+        <tr>
+            <td>
+                <span style="padding-right: 10px">{{Constants.data.F8_Q1.label.1}}</span>
+            </td>
+            {{for i in form.F801}}
+            <td class="text-center">
+                <span style="padding-right: 10px">{{i}}</span>
+            </td>
+            {{endfor}}
+            <td>
+                <span style="padding-right: 10px">{{Constants.data.F8_Q1.label.2}}</span>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div class="alert p-4">
+    <p>
+        {{form.F802.label}}
+    </p>
+    <table>
+        {{for i in form.F802}}
+        <tr>
+            <td>
+                <span style="padding-right: 10px">{{i}}</span>
+            </td>
+            <td>
+                <span style="padding-right: 10px">{{i.label}}</span>
+            </td>
+        </tr>
+        {{endfor}}
+    </table>
+</div>
+
+<p>
+    Bitte klicken Sie nun auf <em>Weiter</em>, um fortzufahren.
+</p>
+
+{% next_button %}
+{% endblock %}

@@ -1,0 +1,48 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+Zusammenfassung und allgemeine Hinweise
+{% endblock %}
+
+{% block content %}
+
+<p style="text-align: justify">
+    Insgesamt werden Sie 24 Entscheidungssituationen gegenüberstehen. Am Ende wird <b>eine</b>
+    Entscheidungssituation zufällig ausgelost. Diese Entscheidungssituation bestimmt Ihre Auszahlung
+</p>
+
+<p class="alert border-dark" style="text-align: justify">
+    <b>
+        Tipp: Sie sollten Ihre Entscheidung in jeder Zeile jeder Tabelle so treffen, als wäre es Ihre
+        einzige Entscheidung, da jede einzelne Ihrer Entscheidungen am Ende für Ihre Auszahlung
+        relevant sein kann.
+    </b>
+</p>
+
+<p style="text-align: justify">
+    Generell gilt während des Experiments: solange Sie nicht den „Weiter“-Knopf drücken, können
+    Sie Ihre Entscheidungen noch ändern. Sobald Sie alle in einer Tabelle zusammengefassten
+    Entscheidungen gefällt haben, drücken Sie bitte den „Weiter“-Knopf unten rechts auf dem
+    Bildschirm. Es wird Ihnen dann der nächste Entscheidungsbildschirm angezeigt.
+</p>
+
+<p style="text-align: justify">
+    Gegen Ende des heutigen Experiments – im Anschluss an die 24 Entscheidungssituationen –
+    folgen dann noch einige Bildschirme mit Fragen u. Ä., bevor wir zur Auszahlung des von Ihnen
+    verdienten Geldes kommen. Bei vollständiger und gewissenhafter Beantwortung des
+    Abschlussfragebogens erhalten Sie zusätzlich zu dem Einkommen, das sich durch Ihre
+    Entscheidungen während des Experiments ergeben hat, noch {{Constants.fee_questionnaire}}.
+</p>
+
+<p style="text-align: justify">
+    Nach dem Ausfüllen der Fragen erfahren Sie, welche der 24 Entscheidungssituationen für Sie
+    auszahlungsrelevant ist und wie hoch Ihre Auszahlung ist.
+</p>
+
+<p>
+    Bitte klicken Sie nun auf <em>Weiter</em>, um fortzufahren.
+</p>
+
+{% next_button %}
+{% endblock %}

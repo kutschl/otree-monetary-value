@@ -1,0 +1,88 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+Textverständnis
+{% endblock %}
+
+{% block content %}
+
+<p>
+    Bitte beantworten Sie die folgenden Fragen.
+</p>
+
+<div class="alert p-4">
+    <p>
+        {{form.PU01.label}}
+    </p>
+    <p>
+        {{form.PU01}}
+    </p>
+</div>
+<div class="alert p-4">
+    <p>
+        {{form.PU02.label}}
+    </p>
+    <p>
+        {{form.PU02}}
+    </p>
+</div>
+<div class="alert p-4">
+    <p>
+        {{form.PU03.label}}
+    </p>
+    <p>
+        {{form.PU03}}
+    </p>
+</div>
+
+<p>
+    {{Constants.data.PU2.task}}
+</p>
+
+<div class="alert p-4">
+    <p>
+        {{form.PU04.label}}
+    </p>
+    <table>
+        <tr>
+            <td>
+                {{Constants.data.PU2.label.1}}
+            </td>
+            {{for i in form.PU04}}
+            <td class="text-center" width="30px">
+                {{i}}</td>
+            {{endfor}}
+            <td>
+                {{Constants.data.PU2.label.2}}
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div class="alert p-4">
+    <p>
+        {{form.PU05.label}}
+    </p>
+    <table>
+        <tr>
+            <td>
+                {{Constants.data.PU2.label.1}}
+            </td>
+            {{for i in form.PU05}}
+            <td class="text-center" width="30px">
+                {{i}}</td>
+            {{endfor}}
+            <td>
+                {{Constants.data.PU2.label.2}}
+            </td>
+        </tr>
+    </table>
+</div>
+
+<p>
+    Bitte klicken Sie nun auf <em>Weiter</em>, um fortzufahren.
+</p>
+
+{% next_button %}
+{% endblock %}
